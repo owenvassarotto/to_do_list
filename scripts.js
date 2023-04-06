@@ -3,7 +3,18 @@ const listContainer = document.getElementById('list-container');
 const btnAdd = document.getElementById('btn-add');
 
 function addTask(){
-    console.log("Adding a task")
+    if(inputBox.value === ""){
+        alert("You must write something!");
+    }
+    else{
+        let li = document.createElement("li");
+        li.innerHTML = inputBox.value;
+        listContainer.appendChild(li);
+        let span = document.createElement('span');
+        span.innerHTML = "\u00d7"
+        li.appendChild(span);
+    }
+    inputBox.value = "";
 }
 
 btnAdd.addEventListener("click", addTask);
