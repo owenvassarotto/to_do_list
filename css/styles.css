@@ -12,3 +12,35 @@ html {
 *{
     font-family: 'JetBrains Mono', monospace;
 }
+
+body{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #2e2e2e;
+    padding: 1rem;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 50.4rem;
+    background-color: #fff;
+    /* margin: 10rem auto 2rem; */
+    padding: 4rem 3rem 7rem;
+    border-radius: 1rem;
+}
+
+.todo-app h2{
+    color: #2e2e2e;
+    display: flex;
+    align-items: center;
+}
+
+.todo-app h2 img{
+    width: 3.5rem;
+}
