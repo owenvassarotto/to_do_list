@@ -23,16 +23,17 @@ body{
     width: 100%;
     min-height: 100vh;
     background-color: #2e2e2e;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .todo-app{
     width: 100%;
     max-width: 50.4rem;
-    background-color: #fff;
+    background-color: #f3f3f3;
     /* margin: 10rem auto 2rem; */
     padding: 4rem 3rem 7rem;
     border-radius: 1rem;
+    margin: 0 auto;
 }
 
 .todo-app h2{
@@ -43,4 +44,34 @@ body{
 
 .todo-app h2 img{
     width: 3.5rem;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c6d5f1;
+    border-radius: 3rem;
+    padding-left: 2rem;
+}
+
+.row input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 1rem;
+}
+
+.row button{
+    border: none;
+    outline: none;
+    padding: 1.5rem 5rem;
+    cursor: pointer;
+    background-color: #fffc68;
+    border-radius: 4rem;
+}
+
+.row button:hover{
+    background-color: #fffc4d;
 }
