@@ -15,6 +15,7 @@ function addTask(){
         li.appendChild(span);
     }
     inputBox.value = "";
+    saveData();
 }
 
 btnAdd.addEventListener("click", addTask);
@@ -23,8 +24,20 @@ btnAdd.addEventListener("click", addTask);
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
+        saveData();
     }
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
+        saveData();
     }
 });
+
+//a function to save task information in local storage
+function saveData(){
+   localStorage.setItem("data", listContainer.innerHTML); 
+}
+//this function retrieves data from the local storage using the getItem()
+function showTaks(){
+    listContainer.innerHTML = localStorage.getItem("data");
+}
+showTaks();
