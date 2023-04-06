@@ -18,3 +18,13 @@ function addTask(){
 }
 
 btnAdd.addEventListener("click", addTask);
+
+//The following code allows when clicking on the task to apply the styles of the .checked class and also allows pressing the span to remove the task.
+listContainer.addEventListener("click", function(e){
+    if(e.target.tagName === "LI"){
+        e.target.classList.toggle("checked");
+    }
+    else if(e.target.tagName === "SPAN"){
+        e.target.parentElement.remove();
+    }
+});
