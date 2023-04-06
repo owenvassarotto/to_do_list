@@ -96,3 +96,11 @@ ul li::before{
     top: .8rem;
     left: 0rem;
 }
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(/images/checked.png);
+}
