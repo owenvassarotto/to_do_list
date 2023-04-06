@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
+    <!-- Icon -->
+    <link rel="icon" href="images/to_do_list_icon.png" type="image/png">
     <!-- CSS -->
-    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="css/styles.css" as="style" />
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- JS -->
-    <script src="scripts.js"></script>
     <!-- Font Awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,16 +22,21 @@
     <div class="container">
       <section class="todo-app">
         <h2>To_Do_List <img src="images/icon.png" /></h2>
+
         <div class="row">
           <input type="text" id="input-box" placeholder="Add your task" />
-          <button>Add</button>
+          <button id="btn-add">Add</button>
         </div>
+
         <ul id="list-container">
-            <!-- <li class="checked">Task 1</li>
+          <!-- <li class="checked">Task 1</li>
             <li>Task 2</li>
             <li>Task 3</li> -->
         </ul>
       </section>
     </div>
+
+    <!-- JS -->
+    <script src="scripts.js"></script>
   </body>
 </html>
