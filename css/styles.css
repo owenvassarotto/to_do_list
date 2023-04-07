@@ -19,7 +19,7 @@ html {
     width: 100%;
     min-height: 100vh;
     background-color: #2e2e2e;
-    padding: 3rem 0;
+    padding: 3rem 0 7rem;
 }
 
 .todo-app{
@@ -121,7 +121,7 @@ ul li span:hover{
 }
 
 .footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
